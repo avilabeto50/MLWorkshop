@@ -30,7 +30,7 @@
         <h1>Penguin Data Classifier</h1>
 
         <div>
-            <form> <!-- set the form action and method -->
+            <form action="/predict" method="post"> <!-- set the form action and method -->
                 <div>
                     <label for="culmen-length" class="form-label">Culmen Length</label>
 
@@ -43,14 +43,35 @@
 
                 <div>
                     <!-- create a form field for the culmen depth (in millimeters) of the penguin -->
+                    <label for="culmen-depth" class="form-label">Culmen Depth</label>
+
+                    <div class="input-group">
+                        <input type="number" min="0.1" step="0.1" class="form-control" id="culmen-depth" name="culmen-depth" required="required" />
+
+                        <span class="input-group-text">mm</span>
+                    </div>
                 </div>
 
                 <div>
                     <!-- create a form field for the flipper length (in millimeters) of the penguin -->
+                    <label for="flipper-length" class="form-label">Flipper Length</label>
+
+                    <div class="input-group">
+                        <input type="number" min="0.1" step="0.1" class="form-control" id="flipper-length" name="flipper-length" required="required" />
+
+                        <span class="input-group-text">mm</span>
+                    </div>
                 </div>
 
                 <div>
                     <!-- create a form field for the body mass (in grams) of the penguin -->
+                    <label for="body-mass" class="form-label">Body Mass</label>
+
+                    <div class="input-group">
+                        <input type="number" min="0.1" step="0.1" class="form-control" id="body-mass" name="body-mass" required="required" />
+
+                        <span class="input-group-text">g</span>
+                    </div>
                 </div>
 
                 <div>
@@ -60,7 +81,7 @@
                 </div>
 
                 <div>
-                    <input type="" class="btn btn-primary btn-lg" value="Predict" /> <!-- set the type of the input field to submit the form -->
+                    <input type="submit" class="btn btn-primary btn-lg" value="Predict" /> <!-- set the type of the input field to submit the form -->
                 </div>
             </form>
         </div>

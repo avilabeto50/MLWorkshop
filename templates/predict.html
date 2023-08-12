@@ -30,15 +30,15 @@
         <h1>Penguin Data Classifier</h1>
 
         <div>
-            <p>The predicted penguin has a species of <strong>{{  }}</strong>.</p> <!-- get the value of the predicted class -->
+            <p>The predicted penguin has a species of <strong>{{class_predicted}}</strong>.</p> <!-- get the value of the predicted class -->
         </div>
 
         <div>
-            <img src="{{  }}" alt="{{ class_predicted }} Species Penguin" width="250" /> <!-- get the value of the image URL of the predicted class -->
+            <img src="{{ class_image_url }}" alt="{{ class_predicted }} Species Penguin" width="250" /> <!-- get the value of the image URL of the predicted class -->
         </div>
 
         <div>
-            <a class="btn btn-primary btn-lg" href="" role="button">Go Back</a> <!-- set the link to go back to the route set for index.html -->
+            <a class="btn btn-primary btn-lg" href="/" role="button">Go Back</a> <!-- set the link to go back to the route set for index.html -->
         </div>
     </body>
 </html>
